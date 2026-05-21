@@ -6,8 +6,17 @@ blocks = [
     "Grass Block",
     "Sand",
     "Oak Log",
-    "Cobblestone"
+    "Cobblestone",
+    "Oak Plank",
+    "Birch Log",
+    "Birch Plank",
+    "Diamond Block"
 ]
 
 random_block = random.choice(blocks)
-print("Random Minecraft block:", random_block)
+inputblock = input("input a random block: ")
+
+if random_block == inputblock:
+    print("correct!")
+else:
+    print("wrong... it was" + random_block)
