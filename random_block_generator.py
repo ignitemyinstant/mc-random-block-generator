@@ -13,10 +13,11 @@ blocks = [
     "Diamond Block"
 ]
 
-random_block = random.choice(blocks)
-inputblock = input("input a random block: ")
-
-if random_block == inputblock:
-    print("correct!")
+inputblock = input("input a random block: ").strip()
+if inputblock not in blocks:
+    print("That's not a valid block name!")
 else:
-    print("wrong... it was" + random_block)
+    if random_block == inputblock:
+        print("correct!")
+    else:
+        print("wrong... it was " + random_block)
